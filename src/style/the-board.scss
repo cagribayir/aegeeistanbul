@@ -1,0 +1,171 @@
+.the-board {
+	z-index: 7;
+
+	&__photo {
+		width: 100%;
+		height: 100vh;
+		min-height: 650px;
+		
+		background: url("img/board.jpg") 40% / cover;
+		
+		@media (max-width: $breakpointMobile) {
+			height: auto;
+			background: none;
+		}
+	}
+	
+	&__photo-title {
+		width: 22%;
+		padding: 6% 4% 0 0;
+		
+		position: absolute;
+		right: 0;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			height: auto;
+			padding: 4% 0 5% 0;
+			
+			position: static;
+		}
+	}
+	
+	&__photo-mobile {
+		width: 100%;
+		height: 300px;
+		
+		background: url("img/boardMobile.jpg") center 100% / cover;
+		
+		@media (min-width: $breakpointMobile) {
+			display: none;
+		}
+	}
+	
+	&__social {
+		height: 0;
+		padding-right: 10vw;
+		
+		display: flex;
+		justify-content: center;
+		transform: translateY(-13vw);
+		
+		text-shadow: color-mod(black a(0.8)) 0 0 0.5vw;
+		
+		@media (max-width: $breakpointMobile) {
+			height: auto;
+			padding: 6vw 7vw 2vw;
+			
+			display: block;
+			transform: none;
+		}
+	}
+	
+	&__social-entry {
+		width: 18%;
+		
+		@media (max-width: $breakpointMobile) {
+			width: auto;
+			text-align: center;
+		}
+	}
+	
+	&__social-title {
+		margin-top: 0;
+		margin-bottom: 1.5%;
+		
+		color: $color3;
+		font-family: bebas-neue, sans-serif;
+		font-size: 200%;
+		font-weight: 500;
+		
+		@media (max-width: $breakpointMobile) {
+			margin-top: 8vw;
+			font-size: 230%;
+		}
+	}
+	
+	&__social-icon {
+		width: 15%;
+		height: 15%;
+		margin: 2% 3% 0 0;
+		
+		border-radius: 100%;
+		box-shadow: 0 0 1vw color-mod(black a(0.8));
+		
+		transition: box-shadow $time2;
+		
+		&:hover {
+			box-shadow: 0 0 1vw $color6;
+		}
+		
+		@media (max-width: $breakpointMobile) {
+			margin: 2% 1.5% 0;
+		}
+	}
+	
+	&__table-container {
+		height: 11.2vw;
+		margin: 3% 16% 0;
+		overflow-x: scroll;
+		
+		@media (max-width: $breakpointMobile) {
+			height: 48vw;
+			margin: 0;
+			padding: 0 5%;
+		}
+		
+		@media (min-width: $breakpointBig) {
+			height: 210px;
+		}
+	}
+
+	&__table {
+		width: 140%;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 400%;
+			margin: 8vw auto 2vw;
+		}
+	}
+
+	&__years {
+		width: 100%;
+		margin: 1vw 0 0;
+		padding: 0 10%;
+		display: flex;
+		justify-content: center;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			margin: 6vw 0 0;
+			flex-wrap: wrap;
+		}
+	}
+
+	&__years-item {
+		padding: 2vw 0;
+		flex: 1;
+		text-align: center;
+		
+		@media (max-width: $breakpointMobile) {
+			flex-basis: 33%;
+		}
+	}
+	
+	&__fb-iframe {
+		width: 600px;
+		height: 400px;
+		margin: 4% auto 3%;
+		
+		display: block;
+		
+		background: white;
+		border: none;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 100%;
+			height: calc(100vw * 0.65);
+			margin: 8vw auto;
+		}
+	}
+}

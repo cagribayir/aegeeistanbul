@@ -1,0 +1,25 @@
+.faq {
+	z-index: 5;
+	
+	&__question-index {
+		padding: 0.2vw 0;
+		display: block;
+		color: white;
+		
+		@media (max-width: $breakpointMobile) {
+			padding: 1.8vw 0;
+			line-height: 1.2;
+		}
+	}
+	
+	&__question {
+		margin: 5% 0 1%;
+		
+		font-family: bebas-neue, sans-serif;
+		line-height: 1;
+		
+		@media (max-width: $breakpointMobile) {
+			margin: 10vw 0 2vw;
+		}
+	}
+}

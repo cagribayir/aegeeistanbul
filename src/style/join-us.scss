@@ -1,0 +1,50 @@
+.join-us {
+	z-index: 6;
+	
+	&__paypal-form {
+		height: 7vw;
+		
+		@media (min-width: $breakpointBig) {
+			height: 140px;
+		}
+		
+		@media (max-width: $breakpointMobile) {
+			min-height: 110px;
+		}
+	}
+
+	&__paypal-button {
+		width: 30%;
+		display: block;
+		margin: 0 auto;
+		
+		@media (max-width: $breakpointMobile) {
+			width: 60vw;
+			margin: 5vw auto;
+		}
+	}
+
+	/* 	&__paypal {
+		width: 14vw;
+		height: 4.2vw;
+		margin: 2vw auto;
+
+		display: block;
+
+		background: inline(img/paypal.svg) no-repeat center #ffc339;
+		border-radius: 100vw;
+
+		transition: $time1;
+
+		&:hover {
+			transform: scale(1.03);
+			box-shadow: color-mod(white a(70%)) 0 0 2vw;
+		}
+		
+		@media (max-width: $breakpointMobile) {
+			width: 60vw;
+			height: 16vw;
+			margin: 8vw auto;
+		}
+	} */
+}
